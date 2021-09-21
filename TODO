@@ -1,9 +1,20 @@
 Things to do:
-make navbar and footer.
-        make sure that everything in them has a common class that can be deliniated from everything else in css.
-        look up if an unknown number of steps can be taken in css selectors (have one main div that wraps everything and select that way instead of common class.)
-Make github repo.
-Make skeleton of all pages as seen in phone pic
-
+make footer.
+Make skeleton of all pages as seen in phone pic (Just software, login, logout, and account info)
+	For Software only have the following products: Recipe storing, auto photo backup, network monitoring.
 More things to do:
 	Write more styles for header so that is sticks to the top of the page(same for footer on bottom)
+
+Timed:
++ 30 mins + Make footer
++ 45 mins + Make Home Page - skeleton
++ 45 mins + Home page - styles
++ 30 mins + Make Login screen - skeleton
++ 15 mins + login screen - styles
++ 30 mins + Make logout screen - skeleton
++ 15 mins + logout screen - styles
++ 45 mins + Make account info screen - skeleton
++ 20 mins + account info screen - styles
++ 90 mins + Make software screen - skeleton
++ 45 mins + software screen - styles
+sum = 410 mins (overestimate)
