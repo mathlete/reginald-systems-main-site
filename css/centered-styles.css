@@ -5,9 +5,13 @@
 	align-items: center;
 	flex-direction: row;
 	margin-bottom: 40px;
-	margin-top: 25%;
+	margin-top: 5%;
 }
 
 .centered {
-	
+	display: flex;
+	flex-direction: column;
+	border: black 2px solid;
+	padding: 30px;
+	border-radius: 10px;
 }
