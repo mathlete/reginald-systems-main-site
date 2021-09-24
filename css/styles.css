@@ -23,6 +23,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	border: black 2px dashed;
+	border-radius: 5px;
 	margin: 10px;
 }
 
@@ -37,4 +38,9 @@ body {
 
 .config-help {
 	width: 250px;
+}
+
+.config-selected {
+	border: black 2px solid;
+	border-radius: 10px;
 }
