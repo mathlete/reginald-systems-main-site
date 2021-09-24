@@ -1,3 +1,7 @@
+body {
+	margin-bottom: 50px
+}
+
 #config {
 	display: flex;
 	flex-direction: row;
