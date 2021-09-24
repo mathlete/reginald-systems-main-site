@@ -2,12 +2,12 @@ Timed:
 - 00 mins + Make footer
 + 45 mins + Make Home Page - skeleton
 + 45 mins + Home page - styles
-+ 30 mins + Make Login screen - skeleton
+- 00 mins + Make Login screen - skeleton
 + 15 mins + login screen - styles
-+ 30 mins + Make logout screen - skeleton
+- 00 mins + Make logout screen - skeleton
 + 15 mins + logout screen - styles
 + 45 mins + Make account info screen - skeleton
 + 20 mins + account info screen - styles
 + 90 mins + Make software screen - skeleton
 + 45 mins + software screen - styles
-sum = 410 mins (overestimate)
+sum = 320 mins (overestimate)
