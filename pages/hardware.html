@@ -1,14 +1,38 @@
+<!-- TODO:
+Add in images from downloads for headers
+Add in text headers
+Add in Help Me Choose boxes that expand
+Look into toggelable highlighting (optional)-->
 <html>
 	<head>
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="/css/shared-styles.css">
 		<link rel="stylesheet" href="/css/colors.css">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-		<title>Hardware - Reginald Systems</title>
+		<title>Build Your System - Reginald Systems</title>
 	</head>
 	<body>
 		<!--# include file="/shared/navbar.html" -->
-		<h1>Checkout the hardware we have available!!</h1>
+		<h2>Build Your System:</h2>
+		<div> <!-- make flex -->
+			<div id="ram-config">
+				<div id="ram-2"><p>2Gb of RAM</p></div>
+				<div id="ram-4"><p>4Gb of RAM</p></div>
+				<div id="ram-8"><p>8Gb of RAM</p></div>
+			</div>
+			<div id="hdd-config">
+				<div id="hdd-256"><p>256Gb of Storage</p></div>
+				<div id="hdd-512"><p>512Gb of Storage</p></div>
+				<div id="hdd-1024"><p>1Tb of Storage</p></div>
+				<div id="hdd-2048"><p>2Tb of Storage</p></div>
+				<div id="hdd-4096"><p>4Tb of Storage</p></div>
+			</div>
+			<div id="ssd-config">
+				<div id="ssd-16"><p>16Gb of App Space</p></div>
+				<div id="ssd-32"><p>32Gb of App Space</p></div>
+				<div id="ssd-64"><p>64Gb of App Space</p></div>
+			</div>
+		</div>
 
 		<!--# include file="/shared/footer.html" -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
