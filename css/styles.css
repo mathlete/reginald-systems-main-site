@@ -22,6 +22,11 @@
 	margin: 10px;
 }
 
+.config-image {
+	height: 180px;
+	width: 250px;
+}
+
 .config-option > p {
 	text-align: center;
 	margin: 0px;
