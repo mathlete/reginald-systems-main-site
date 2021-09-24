@@ -1,0 +1,28 @@
+#config {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.config-group {
+	flex-grow:1;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.config-option {
+	height: 90px;
+	width: 175px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: black 2px dashed;
+	margin: 10px;
+}
+
+.config-option > p {
+	text-align: center;
+	margin: 0px;
+}
