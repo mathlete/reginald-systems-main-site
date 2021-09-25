@@ -3,11 +3,11 @@ Timed:
 + 45 mins + Make Home Page - skeleton
 + 45 mins + Home page - styles
 - 00 mins + Make Login screen - skeleton
-+ 15 mins + login screen - styles
+- 00 mins + login screen - styles
 - 00 mins + Make logout screen - skeleton
-+ 15 mins + logout screen - styles
-+ 45 mins + Make account info screen - skeleton
-+ 20 mins + account info screen - styles
-+ 90 mins + Make software screen - skeleton
-+ 45 mins + software screen - styles
-sum = 320 mins (overestimate)
+- 00 mins + logout screen - styles
+- 00 mins + Make account info screen - skeleton
+- 00 mins + account info screen - styles
+- 00 mins + Make software screen - skeleton
+- 00 mins + software screen - styles
+sum = 090 mins (overestimate)

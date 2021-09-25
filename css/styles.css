@@ -55,7 +55,7 @@ body {
 
 .app-text {
 	padding: 20px;
-	text-align: center;
+	text-align: left;
 }
 
 .app-image {
@@ -67,4 +67,5 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	padding: 40px;
 }
