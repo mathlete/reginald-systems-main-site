@@ -69,3 +69,16 @@ body {
 	justify-content: space-around;
 	padding: 40px;
 }
+
+.main-page-box-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.main-page-box {
+	padding: 40px;
+}
+
+.main-page-box > h3 {
+	text-align: center;
+}
