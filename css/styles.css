@@ -52,3 +52,20 @@ body {
 	border: black 2px solid;
 	border-radius: 10px;
 }
+
+.app-text {
+	padding: 20px;
+	text-align: center;
+}
+
+.app-image {
+	/*max-width: 200px;
+	max-height: 300px;*/
+}
+
+.app-card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
