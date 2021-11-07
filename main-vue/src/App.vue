@@ -1,20 +1,20 @@
 <template>
 <div id="app">
-  <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
+  <b-navbar toggleable="lg" class="color-bg-lblue">
+    <b-navbar-brand style="padding-left:10px" to="/"><img src="./assets/logo.png" width="64" height="32"></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">Software</b-nav-item>
-        <b-nav-item href="#">Hardware</b-nav-item>
+        <b-nav-item to="/">Home</b-nav-item>
+        <b-nav-item to="/software">Software</b-nav-item>
+        <b-nav-item to="/hardware">Hardware</b-nav-item>
         <b-nav-item-dropdown text="Account">
-          <b-dropdown-item href="#">My Account</b-dropdown-item>
-          <b-dropdown-item href="#"><hr></b-dropdown-item>
-          <b-dropdown-item href="#">Log In</b-dropdown-item>
-          <b-dropdown-item href="#">Log Out</b-dropdown-item>
+          <b-dropdown-item to="/login">My Account</b-dropdown-item>
+          <b-dropdown-item><hr></b-dropdown-item>
+          <b-dropdown-item to="/login">Log In</b-dropdown-item>
+          <b-dropdown-item to="/logout">Log Out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
