@@ -11,7 +11,7 @@
         <b-nav-item to="/software">Software</b-nav-item>
         <b-nav-item to="/hardware">Hardware</b-nav-item>
         <b-nav-item-dropdown text="Account">
-          <b-dropdown-item to="/login">My Account</b-dropdown-item>
+          <b-dropdown-item to="/account">My Account</b-dropdown-item>
           <b-dropdown-item><hr></b-dropdown-item>
           <b-dropdown-item to="/login">Log In</b-dropdown-item>
           <b-dropdown-item to="/logout">Log Out</b-dropdown-item>
