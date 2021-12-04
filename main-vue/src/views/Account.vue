@@ -4,6 +4,7 @@
       <h2 class="title" style="text-align:center; margin:20px;">Testing Space</h2>
       <div class="slidcontainer">
         <input type="range" min="1" max="100" v-bind:value="sliderVal" class="slider" id="myRange">
+        <p>{{ sliderVal }}</p>
       </div>
     </div>
   </div>
