@@ -5,6 +5,7 @@ import Hardware from '../views/Hardware.vue'
 import Software from '../views/Software.vue'
 import Login from '../views/Login.vue'
 import Logout from '../views/Logout.vue'
+import Account from '../views/Account.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/logout',
     name: 'Logout',
     component: Logout
+  },
+  {
+    path: '/account',
+    name: 'Account',
+    component: Account
   },
 ]
 
