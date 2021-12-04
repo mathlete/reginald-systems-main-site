@@ -1,0 +1,22 @@
+User database:
+User: {
+  username: String,
+  salt: String,
+  hash: String,
+  devices: array(of devices objects),
+}
+
+Device: {
+  Memory Usage: int [0, 100]
+  HDD Usage: int [0, 100]
+  SSD Usage: int [0, 100]
+  name: String
+  ?status: String (Good, Warning, Error)
+}
+
+For Sale Database:
+Listing_Matrix: {
+  memory: array (all same as mock data)
+  HDD: array
+  SSD: array
+}
