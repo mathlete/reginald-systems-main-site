@@ -56,7 +56,7 @@ export default {
   name: 'Account',
   methods: {
     updateSliderVal() {
-      slider=document.getElementById("myRange");
+      let slider=document.getElementById("myRange");
       this.$root.$data.sliderVal = slider.value;
     }
   },
