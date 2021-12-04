@@ -3,7 +3,7 @@
     <div class="title-container">
       <h2 class="title" style="text-align:center; margin:20px;">Testing Space</h2>
       <div class="slidcontainer">
-        <input type="range" min="1" max="100" v-bind:value="sliderVal" class="slider" id="myRange">
+        <input type="range" min="1" max="100" v-bind:value="sliderVal" class="slider" id="myRange" @oninput="updateSliderVal">
         <p>{{ sliderVal }}</p>
       </div>
     </div>
@@ -54,6 +54,12 @@
 <script>
 export default {
   name: 'Account',
+  methods: {
+    updateSliderVal() {
+      slider=document.getElementById("myRange");
+      this.$root.$data.sliderVal = slider.value;
+    }
+  },
   data() {
     return {
       sliderVal: 35,
