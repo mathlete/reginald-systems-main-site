@@ -62,20 +62,22 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'Hardware',
+  created() {
+    console.log("Before listings");
+    this.getListings();
+    console.log("After Listings");
+  },
   computed: {
-    ram: function() {
-      return this.$root.$data.ram;
-    },
-    hdd: function() {
-      return this.$root.$data.hdd;
-    },
-    ssd: function() {
-      return this.$root.$data.ssd;
-    },
     cost: function() {
-      return (this.ram[this.ramID-1].price + this.hdd[this.hddID-1].price + this.ssd[this.ssdID-1].price).toFixed(2)
+      try {
+        return (this.ram[this.ramID-1].price + this.hdd[this.hddID-1].price + this.ssd[this.ssdID-1].price).toFixed(2)
+      } catch (error) {
+        console.log("error calculating cost");
+        return ("0.00")
+      }
     }
   },
   methods: {
@@ -87,13 +89,29 @@ export default {
     },
     ssdClick(ssdClass) {
       this.ssdID = ssdClass.sid
-    }
+    },
+    async getListings() {
+      console.log("Before try");
+      try {
+        let response = await axios.get('/api/hardware/listings');
+        console.log(response);
+        this.ram = response.data.ram;
+        this.hdd = response.data.hdd;
+        this.ssd = response.data.ssd;
+        return true;
+      } catch (error) {
+        console.log(error);
+      }
+    },
   },
   data() {
     return { 
       ramID: 1,
       hddID: 1,
-      ssdID: 1
+      ssdID: 1,
+      ram: [],
+      hdd: [],
+      ssd: []
     }
   }
 }

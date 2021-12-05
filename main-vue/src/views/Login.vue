@@ -6,11 +6,11 @@
     <div class="content center-container">
       <div class="centered color-bg-lbemphasis" id="login-box">
         <label for="username"><b>Username</b></label>
-        <input type="text" name="username" placeholder="Username or Email" required>
+        <input type="text" name="username" placeholder="Username or Email" required v-model="username">
         <label for="password"><b>Password</b></label>
-        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="password" placeholder="Password" required v-model="password">
 
-        <button class="color-bg-dblue btn" type="submit" id="login-button">Log In</button>
+        <button class="color-bg-dblue btn" type="submit" id="login-button" @click.prevent="login">Log In</button>
       </div>
     </div>
   </div>
@@ -46,6 +46,28 @@
 
 <script>
 export default {
-  name: 'Login'
+  name: 'Login',
+  data() {
+    return {
+      username: '',
+      password: '',
+    }
+  },
+  methods: {
+    async login() {
+     if (!this.usernameLogin || !this.passwordLogin)
+        return;
+      try {
+        let response = await axios.post('/api/account/login', {
+          username: this.usernameLogin,
+          password: this.passwordLogin,
+        });
+        this.$root.$data.user = response.data.user;
+      } catch (error) {
+        //this.errorLogin = "Error: " + error.response.data.message;
+        this.$root.$data.user = null;
+      } 
+    }
+  }
 }
 </script>

@@ -1,5 +1,6 @@
 User database:
 User: {
+  PID: int,
   username: String,
   salt: String,
   hash: String,
@@ -7,6 +8,7 @@ User: {
 }
 
 Device: {
+  DID: int,
   Memory Usage: int [0, 100]
   HDD Usage: int [0, 100]
   SSD Usage: int [0, 100]
