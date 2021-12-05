@@ -16,6 +16,7 @@ import "@/assets/colors.css"
 import "@/assets/footer.css"
 
 let data = {
+  user: null
 }
 
 new Vue({

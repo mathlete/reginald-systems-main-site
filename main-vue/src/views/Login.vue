@@ -45,6 +45,7 @@
 </style>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'Login',
   data() {
@@ -55,14 +56,15 @@ export default {
   },
   methods: {
     async login() {
-     if (!this.usernameLogin || !this.passwordLogin)
+     if (!this.username || !this.password)
         return;
       try {
         let response = await axios.post('/api/account/login', {
-          username: this.usernameLogin,
-          password: this.passwordLogin,
+          username: this.username,
+          password: this.password,
         });
         this.$root.$data.user = response.data.user;
+        this.$router.push('/account');
       } catch (error) {
         //this.errorLogin = "Error: " + error.response.data.message;
         this.$root.$data.user = null;

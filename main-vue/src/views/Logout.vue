@@ -41,7 +41,17 @@
 </style>
 
 <script>
+import axios from 'axios';
 export default {
-  name: 'Logout'
+  name: 'Logout',
+  created() {
+    this.logout();
+  },
+  methods: {
+    async logout() {
+      await axios.delete("/api/account");
+      this.$root.$data.user = null;
+    }
+  }
 }
 </script>
