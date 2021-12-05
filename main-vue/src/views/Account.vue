@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="title-container">
-      <h2 class="title" style="text-align:center; margin:20px;">Testing Space</h2>
+      <h2 class="title" style="text-align:center; margin:20px;">Your Devices:</h2>
       <b-button class="color-bg-dblue" v-if="editing" @click="saveEdit">Save</b-button>
       <b-button class="color-bg-dblue" v-else @click="setEdit">Edit</b-button>
     </div>
